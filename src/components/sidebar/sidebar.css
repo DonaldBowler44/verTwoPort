@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+    background: transparent;
+    position: fixed;
+    top: 35%;
+    left: 0;
+    width: 225px;
+    height: 28%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    /* border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white; */
+    border-radius: 10px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    /* border-bottom: 1px solid #10558d; */
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover {
+    background-color: #0ff;
+    box-shadow:
+    0px 0px 5px #fff,
+    0px 0px 10px #f0f,
+    0px 0px 15px #0ff
+    
+  }
+  
+  .wrapper .sidebar ul li a:hover .icon {
+    color: #000;
+  }
+  
+  /* Media Queries for tablets and phones */
+
+@media (max-width: 1024px) {
+    /* Adjust the styles for tablets */
+    /* .wrapper .sidebar ul li a:hover {
+        background-color: #0ff;
+        box-shadow:
+        0px 0px 5px #fff,
+        0px 0px 10px #f0f,
+        0px 0px 15px #0ff
+        
+      } */
+    
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust the styles for landscape-oriented tablets and small devices */
+    /* .wrapper .sidebar ul li a:hover {
+        background-color: #0ff;
+        box-shadow:
+        0px 0px 5px #fff,
+        0px 0px 10px #f0f,
+        0px 0px 15px #0ff
+        
+      } */
+  }
+

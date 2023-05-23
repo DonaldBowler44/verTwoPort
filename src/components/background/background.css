@@ -1,0 +1,150 @@
+body {
+    overflow: hidden;
+  }
+  
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+  }
+  
+  .pyramid {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      transform-style: preserve-3d;
+      transform: rotateY(326deg) rotateX(2deg) rotateZ(359deg);
+  }
+  
+  .side {
+      width: 0;
+      height: 0;
+      position: absolute;
+      opacity: 0.7;
+      border: 100px solid transparent;
+      border-bottom: 200px solid teal;
+      border-top: 0px;
+    }
+  
+    .one {
+      transform: rotateX(30deg);
+      transform-origin: 0 0;
+      
+    }
+  
+    .two {
+      transform-origin: 100px 0;
+      transform: rotateY(90deg) rotateX(-30deg);
+      border-bottom-color: #D1FAFF;
+    }
+  
+    .three {
+      transform-origin: 100px 0;
+      transform: rotateY(270deg) rotateX(-30deg);
+      border-bottom-color: #D1FAFF;
+    }
+    
+    .four {
+      transform-origin: 100px 0;
+      transform: rotateY(0) rotateX(-30deg);
+      border-bottom-color: teal;
+    }
+  
+    .base {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: translateY(73px) rotateX(90deg);
+      border: 0;
+      background: teal;
+      box-shadow:
+      0 0 60px 30px #fff,  /* inner white */
+      0 0 100px 60px #f0f, /* middle magenta */
+      0 0 140px 90px #0ff; /* outer cyan */
+    }
+  
+  
+    @keyframes rotate {
+      from {
+        transform: rotateY(0) rotateX(3deg) rotateZ(0);
+      }
+      to {
+        transform: rotateY(360deg) rotateX(3deg) rotateZ(0);
+      }
+    }
+    
+    .pyramid {
+      animation: rotate 5s linear infinite;
+    }
+  
+    .spin {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      margin-top: -25px;
+      margin-left: -25px;
+      border-radius: 50%;
+      background-color: #FFDB58;
+      animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+  
+  
+  .grid-container { 
+      position: absolute; width: 190%; height: 100vh; bottom: 0; left: -50%; overflow: hidden; 
+      transform: perspective(200px) rotateX(40deg) scale(1) translateZ(0);
+      transform-origin: bottom;
+      padding: 1px; 
+      -webkit-background-clip: content-box; 
+      -webkit-backface-visibility: hidden;
+      outline: 1px solid transparent; 
+      will-change: transform; 
+    overflow: hidden;
+  }
+  
+  .grid-line { height: 100%; width: 100%; position: absolute; }
+  
+  
+  .grid-line:before,
+  .grid-line:after  { content: ""; display: block; position: absolute; }
+  .grid-line:before { height: 5px; width: 100%; background: teal; }
+  .grid-line:after  { height: 100%; width: 5px; background-image: linear-gradient(transparent, teal); }
+  
+  .grid-line:nth-child(1):before  { top: 0%;  opacity: 0; }
+  .grid-line:nth-child(2):before  { top: 10%; opacity: 0; }
+  .grid-line:nth-child(3):before  { top: 20%; opacity: .3; }
+  .grid-line:nth-child(4):before  { top: 30%; opacity: .4; }
+  .grid-line:nth-child(5):before  { top: 40%; opacity: .5; }
+  .grid-line:nth-child(6):before  { top: 50%; opacity: .6; }
+  .grid-line:nth-child(7):before  { top: 60%; opacity: .7; }
+  .grid-line:nth-child(8):before  { top: 70%; opacity: .8; }
+  .grid-line:nth-child(9):before  { top: 80%; opacity: .9; }
+  .grid-line:nth-child(10):before { top: 90%; opacity: 1; }
+  .grid-line:nth-child(11):before { top: calc(100% - 3px); }
+  
+  
+  .grid-line:nth-child(1):after  { left: 0%;  }
+  .grid-line:nth-child(2):after  { left: 10%; }
+  .grid-line:nth-child(3):after  { left: 20%; }
+  .grid-line:nth-child(4):after  { left: 30%; }
+  .grid-line:nth-child(5):after  { left: 40%; }
+  .grid-line:nth-child(6):after  { left: 50%; }
+  .grid-line:nth-child(7):after  { left: 60%; }
+  .grid-line:nth-child(8):after  { left: 70%; }
+  .grid-line:nth-child(9):after  { left: 80%; }
+  .grid-line:nth-child(10):after { left: 90%; }
+  .grid-line:nth-child(11):after { left: calc(100% - 3px); }
+  
+  

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import './App.css';
+import HomeContainer from './homecontainer';
+import ServiceContainer from './components/containers/servicecontainer';
+import ProjectContainer from './components/containers/projectCon/projectcontainer';
+import ContactContainer from './components/containers/ContactCon/contactContainer';
+import Player from './components/audioPlayer/audioPlayer';
+import TVisionBox from './TVisonBox';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="WApp">
+      <Player />
+      <Router>
+        <Routes>
+          <Route path="/contact" element={<ContactContainer/>} />
+        <Route path="/project" element={<ProjectContainer />} />
+          <Route path="/service" element={<ServiceContainer />} />
+          <Route path='/home' element={<HomeContainer />} />
+          <Route path='*' element={<TVisionBox />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

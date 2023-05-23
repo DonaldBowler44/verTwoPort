@@ -1,0 +1,33 @@
+/* audioPlayer.css */
+.AudioStyle {
+    color: #0ff; /* Change buttons' color to #0ff (turquoise) */
+    background-color: black; /* Change background color to black */
+}
+
+.AudioStyle .rhap_main-controls-button  {
+    color: #0ff; /* Change buttons' color to #0ff (turquoise) */
+}
+
+.AudioStyle .rhap_time {
+    color: #0ff;
+}
+.AudioStyle .rhap_progress-filled {
+    background-color: #0ff; /* Change progress bar color to #0ff (turquoise) */
+}
+
+.AudioStyle .rhap_progress-indicator {
+    background-color: #0ff; /* Change progress indicator color to #0ff (turquoise) */
+}
+
+.AudioStyle .rhap_repeat-button {
+    color: #0ff;
+}
+
+.AudioStyle .rhap_volume-button {
+    color: #0ff;
+}
+
+.AudioStyle .rhap_volume-indicator {
+    background-color: #0ff;
+}
+

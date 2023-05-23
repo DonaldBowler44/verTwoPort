@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+    list-style: none;
+}
+body {
+    background: #f5f6fa;
+}
+
+.homeContainer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+
+.homeContainer .homeBox{
+    background: transparent;
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    width: 1125px;
+    height: 625px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    /* border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white; */
+    border-radius: 10px;
+}
+
+.homeTitle{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 56px;
+    margin-right: 60%;
+    /* typing animation */
+    overflow: hidden;
+    border-right: .60em solid white; 
+    white-space: nowrap; 
+    /* margin: 5 auto;  */
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite,
+    remove-border 4s step-end forwards;
+    
+
+}
+
+.homeTitleTwo{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 52px;
+    margin-right: 45%;
+    /* typing animation */
+    opacity: 0; /* add opacity */
+    overflow: hidden;
+    border-right: .60em solid white; 
+    white-space: nowrap; 
+    /* margin: 5 auto;  */
+    animation:
+    appear 0.2s steps(30, end) 5s forwards, 
+    typing 3.5s steps(30, end) 5s,
+    blink-caret .5s step-end infinite 5s,
+    remove-border 4s step-end forwards 5s;
+}
+
+.bodyStyle{
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%;
+}
+
+.p1 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%;
+
+    /* typing animation */
+    opacity: 0; /* add opacity */
+    overflow: hidden;
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation:
+    appear 0.2s steps(30, end) 9s forwards, 
+    typing 3.5s steps(30, end) 9s,
+    blink-caret .5s step-end infinite 9s,
+    remove-border 4s step-end forwards 9s;
+}
+
+.p2 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%;
+
+    /* typing animation */
+    opacity: 0; /* add opacity */
+    overflow: hidden;
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation:
+    appear 0.2s steps(30, end) 13s forwards, 
+    typing 3.5s steps(30, end) 13s,
+    blink-caret .5s step-end infinite 13s,
+    remove-border 4s step-end forwards 13s;
+}
+
+.p3 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%;
+
+     /* typing animation */
+     opacity: 0; /* add opacity */
+     overflow: hidden;
+     border-right: .15em solid white; 
+     white-space: nowrap; 
+     margin: 0 auto; 
+     animation:
+     appear 0.2s steps(30, end) 17s forwards, 
+     typing 3.5s steps(30, end) 17s,
+     blink-caret .5s step-end infinite 17s,
+     remove-border 4s step-end forwards 17s;
+}
+
+.p4 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%;
+
+    /* typing animation */
+    opacity: 0; /* add opacity */
+    overflow: hidden;
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation:
+    appear 0.2s steps(30, end) 21s forwards, 
+    typing 3.5s steps(30, end) 21s,
+    blink-caret .5s step-end infinite 21s,
+    remove-border 4s step-end forwards 21s;
+}
+
+.p5 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%; 
+
+    /* typing animation */
+    opacity: 0; /* add opacity */
+    overflow: hidden;
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation:
+    appear 0.2s steps(30, end) 25s forwards, 
+    typing 3.5s steps(30, end) 25s,
+    blink-caret .5s step-end infinite 25s,
+    remove-border 4s step-end forwards 25s;
+}
+
+.p6 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%; 
+
+    /* typing animation */
+    opacity: 0; /* add opacity */
+    overflow: hidden;
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation:
+    appear 0.2s steps(30, end) 29s forwards, 
+    typing 3.5s steps(30, end) 29s,
+    blink-caret .5s step-end infinite 29s,
+    remove-border 4s step-end forwards 29s;
+}
+
+.p7 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%; 
+
+    /* typing animation */
+    opacity: 0; /* add opacity */
+    overflow: hidden;
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation:
+    appear 0.2s steps(30, end) 33s forwards, 
+    typing 3.5s steps(30, end) 33s,
+    blink-caret .5s step-end infinite 33s,
+    remove-border 4s step-end forwards 33s;
+}
+
+.p8 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 27px;
+    margin-right: 45%;
+    
+    /* typing animation */
+    opacity: 0; /* add opacity */
+    overflow: hidden;
+    border-right: .15em solid white; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation:
+    appear 0.2s steps(30, end) 37s forwards, 
+    typing 3.5s steps(30, end) 37s,
+    blink-caret .5s step-end infinite 37s,
+    remove-border 4s step-end forwards 37s;
+}
+
+.homeSocial {
+    margin-left: 10%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction:row;
+    padding-top: 10px;
+  }
+  
+  .homeSocial a:hover{
+    color: gray;
+    transform: scale(1.3);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .homeSocial a {
+    width: max-content;
+    margin-bottom: 1rem;
+    margin-right: 5%;
+    font-size: 2.8rem;
+    color: white;
+  }
+
+  .homeImg {
+    position: fixed;
+    right: 9%;
+    bottom: 30%;
+    width: 525px;
+  }
+  
+
+  .profileImg {
+    top:20px;
+    right: 60%;
+    width: 70%;
+    border-radius: 50%;
+    animation: border-flicker 2s linear infinite;
+    /* box-shadow:
+      0 0 15px 7px #fff, 
+      0 0 25px 15px teal, 
+      0 0 35px 22px #0ff; */
+  }
+
+  @media (max-width: 1024px) {
+    /* Adjust the styles for tablets */
+    .homeContainer .homeBox {
+      left: 10%;
+      width: 800px;
+      height: 500px;
+    }
+  
+    .homeTitle {
+      margin-right: 40%;
+      /* color: red; */
+    }
+  
+    .homeTitleTwo {
+      margin-right: 35%;
+    }
+  
+    .bodyStyle,
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8 {
+      margin-right: 35%;
+    }
+
+    .homeImg {
+      width: 400px;
+      right: 5%;
+      bottom: 25%;
+    }
+  
+    .profileImg {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust the styles for landscape-oriented tablets and small devices */
+    .homeContainer .homeBox {
+      left: 35%;
+      width: 600px;
+      height: 400px;
+    }
+  
+    .homeTitle {
+      font-size: 20px;
+      margin-right: 45%;
+    }
+  
+    .homeTitleTwo {
+      font-size: 16px;
+      margin-right: 45%;
+    }
+  
+    .bodyStyle,
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8 {
+      font-size: 12px;
+      margin-right: 25%;
+    }
+
+    .homeImg {
+      width: 300px;
+      right: 5%;
+      bottom: 3%;
+    }
+  
+    .profileImg {
+      width: 50%;
+    }
+
+    .homeSocial {
+      flex-direction:column;
+      margin-left: 20%;
+    }
+  }
+  
+
+
+  @keyframes border-flicker {
+    0% {
+      opacity:0.1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+      ;
+  -moz-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  box-shadow:
+  0px 0px 58px 2px #fff, 
+  0px 0px 78px 4px rgb(0, 128, 128);
+    }
+    2% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  -moz-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  box-shadow: 
+  0px 0px 58px 2px #fff,
+  0px 0px 78px 4px rgb(0, 128, 128),
+  0px 0px 88px 6px #0ff;
+    }
+    4% {
+      opacity:0.1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  -moz-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  box-shadow:
+  0px 0px 58px 2px #fff, 
+  0px 0px 78px 4px rgb(0, 128, 128),
+  0px 0px 88px 6px #0ff;
+    }
+    
+    8% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  -moz-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  box-shadow: 
+  0px 0px 58px 2px #fff,
+  0px 0px 78px 4px rgb(0, 128, 128),
+  0px 0px 88px 6px #0ff;
+    }
+    70% {
+      opacity:0.7;
+      -webkit-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  -moz-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  box-shadow: 
+  0px 0px 58px 2px #fff,
+  0px 0px 78px 4px rgb(0, 128, 128),
+  0px 0px 88px 6px #0ff;
+    }
+    100% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  -moz-box-shadow: 0px 0px 78px 4px rgb(0, 128, 128);
+  box-shadow: 
+  0px 0px 58px 2px #fff,
+  0px 0px 78px 4px rgb(0, 128, 128),
+  0px 0px 88px 6px #0ff;
+    }
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 40% }
+  }
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+  
+  @keyframes remove-border {
+    from {
+      border-right-width: 0.6em;
+    }
+    to {
+      border-right-width: 0em;
+    }
+  }
+
+  @keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
